@@ -39,22 +39,9 @@ function App() {
 
 <body>
 <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className="mb-3">
-  <Tab eventKey="home" title="Home">
-    <p>first</p>
-  </Tab>
-  <Tab eventKey="profile" title="Profile">
-    <p>second</p>
-  </Tab>
-  <Tab eventKey="contact" title="Contact" disabled>
-    <p>third</p>
-  </Tab>
-</Tabs>
-  <br>
-  </br>
-  <br>
-  </br>
-  <Container>
-  <Table striped bordered hover>
+  <Tab eventKey="inventory" title="Inventory">
+    <Container>
+    <Table striped bordered hover>
   <thead>
     <tr>
       <th>#</th>
@@ -84,6 +71,22 @@ function App() {
   </tbody>
 </Table>
   </Container>
+
+
+
+  </Tab>
+  <Tab eventKey="deliveries" title="Deliveries">
+    <p>second</p>
+  </Tab>
+  <Tab eventKey="contact" title="Test" disabled>
+    <p>third</p>
+  </Tab>
+</Tabs>
+  <br>
+  </br>
+  <br>
+  </br>
+  
 
 
 </body>
