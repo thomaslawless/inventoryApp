@@ -47,26 +47,31 @@ function App() {
       <th>#</th>
       <th>Item</th>
       <th>Recieved</th>
+      <th>Sold</th>
       <th>Remaining</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>1</td>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <td>Item1</td>
+      <td>50</td>
+      <td>25</td>
+      <td>25</td>
     </tr>
     <tr>
       <td>2</td>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
+      <td>Item2</td>
+      <td>25</td>
+      <td>25</td>
+      <td>0</td>
     </tr>
     <tr>
       <td>3</td>
-      <td colSpan={2}>Larry the Bird</td>
-      <td>@twitter</td>
+      <td> Item3</td>
+      <td> 50</td>
+      <td>0</td>
+      <td>50</td>
     </tr>
   </tbody>
 </Table>
@@ -76,10 +81,45 @@ function App() {
 
   </Tab>
   <Tab eventKey="deliveries" title="Deliveries">
-    <p>second</p>
+    <p>implement delivery page, listing the deliveries with ability to click and load what is it each. unique id for each delivery and unique id attached to each item in the delivery</p>
   </Tab>
-  <Tab eventKey="contact" title="Test" disabled>
-    <p>third</p>
+  <Tab eventKey="contact" title="Customers">
+  <Container>
+    <Table striped bordered hover>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Customer</th>
+      <th>Purchased</th>
+      <th>Paid</th>
+      <th>Remaining</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Customer1</td>
+      <td>$50,000</td>
+      <td>$25,000</td>
+      <td>$25,000</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Customer2</td>
+      <td>$25,000</td>
+      <td>$25,000</td>
+      <td>$0</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Customer3</td>
+      <td>$50,000</td>
+      <td>$0</td>
+      <td>$50,000</td>
+    </tr>
+  </tbody>
+</Table>
+  </Container>
   </Tab>
 </Tabs>
   <br>
